@@ -29,6 +29,9 @@ AC_PROG_RANLIB
 # Checks for header files.
 AC_CHECK_HEADERS([stdint.h])
 
+# Install /usr/local/include/cassandracpp
+AC_SUBST(includedir, $includedir/cassandracpp)
+
 # Checks for typedefs, structures, and compiler characteristics.
 AC_CHECK_HEADER_STDBOOL
 AC_TYPE_INT16_T
