@@ -10,10 +10,19 @@ namespace org { namespace apache { namespace cassandra {
 
 const cassandraConstants g_cassandra_constants;
 
+#ifdef VERSION
+#define TMP_VERSION VERSION
+#undef VERSION
+#endif
+
 cassandraConstants::cassandraConstants() {
   VERSION = "19.35.0";
 
 }
+#ifdef TMP_VERSION
+#define VERSION TMP_VERSION
+#undef TMP_VERSION
+#endif
 
 }}} // namespace
 

@@ -13,9 +13,16 @@ namespace org { namespace apache { namespace cassandra {
 
 class cassandraConstants {
  public:
-  cassandraConstants();
-
+#ifdef VERSION
+#define TMP_VERSION VERSION
+#undef VERSION
+#endif
   std::string VERSION;
+#ifdef TMP_VERSION
+#define VERSION TMP_VERSION
+#undef TMP_VERSION
+#endif
+  cassandraConstants();
 };
 
 extern const cassandraConstants g_cassandra_constants;
