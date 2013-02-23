@@ -15612,7 +15612,7 @@ fi
 done
 
 
-#includedir=includedir/thrift
+# Install /usr/local/include/cassandracpp
 includedir=$includedir/cassandracpp
 
 
