@@ -16,6 +16,7 @@ Build and install.
     sudo make install
 
 Uninstall
+
     sudo make uninstall
 
 # How to use
