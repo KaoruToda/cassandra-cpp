@@ -30,7 +30,7 @@ AC_PROG_RANLIB
 AC_CHECK_HEADERS([stdint.h])
 
 # Install /usr/local/include/cassandracpp
-AC_SUBST(includedir, $includedir/cassandracpp)
+AC_SUBST(includedir, $includedir/cassandra/cpp)
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_CHECK_HEADER_STDBOOL

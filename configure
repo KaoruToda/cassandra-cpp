@@ -15613,7 +15613,7 @@ done
 
 
 # Install /usr/local/include/cassandracpp
-includedir=$includedir/cassandracpp
+includedir=$includedir/cassandra/cpp
 
 
 # Checks for typedefs, structures, and compiler characteristics.
